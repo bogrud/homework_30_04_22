@@ -1,132 +1,223 @@
-/*root псевдокласс для описания переменных. синтансис --х*/
-
-:root{
-    --primary-color: white;
-    --second-color: #FA4A0C;
-    --primary-font-size: 16px;
+:root {
+  --primary-color: white;
+  --second-color: #fa4a0c;
+  --primary-font-size: 16px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1440px;
+.cont-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cont-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    display: inline-block;
-    margin-top: 49.5px;
-    margin-bottom: 40.27px;
+.header-logo {
+  display: inline-block;
+  margin-top: 49.5px;
+  margin-bottom: 40.27px;
+  margin-left: 115.43px;
 }
 
 .menu {
-   /* margin-top: 64px;*/
+  /* margin-top: 64px;*/
 }
 
-.inner-menu li{
-    margin-right: 114px;
-    list-style-type: none;
-    display: inline;
+.inner-menu li {
+  margin-right: 114px;
+  list-style-type: none;
+  display: inline;
 }
 
-.inner-menu a{
-    text-decoration: none;
-    font-family: Montserrat;
-    font-size: 16px;
+.inner-menu a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: var(--second-color);
+}
+
+.btn-container {
+  margin-top: 94px;
+}
+
+button {
+  color: white;
+  height: 68px;
+  width: 236px;
+
+  border-radius: 30px;
+  padding: 16px 0px;
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+}
+
+.btn-1 {
+  background: var(--second-color);
+  border: none;
+  margin-right: 35px;
+}
+.btn-2 {
+  background: none;
+  border: 1px solid white;
+}
+
+.restApp {
+  background-image: url('../assets/images/back1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0 178px;
+}
+
+.restApp h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+.restApp h1 {
+  font-family: Poppins;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.restApp h4 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-top: 15px;
+}
+.title{
+    margin-top: 56px;
+    font-family: Poppins;
+    font-size: 44px;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    text-align: center;    
-    color: var(--second-color);
-}
-
-.btn-container{
-    margin-top: 94px;
-}
-
-button{
-    color: white;
-    height: 68px;
-    width: 236px;
-
-    border-radius: 30px;
-    padding: 16px 0px;
-
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.1px;
-}
-
-.btn-1{
-    background: var(--second-color);
-    border: none;
-    margin-right: 35px;
-}
-.btn-2{
-    background: none;
-    border: 1px solid white;
-
-}
-
-.restApp{
-    background-image: url('../assets/images/back1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
     text-align: center;
-    padding: 80px 0 178px;
+    
 }
 
-.restApp h3{
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 0.1px;
-text-align: center;
+.mobile-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 113px;
+  margin-bottom: 50px;
+}
+.mobile-img-up {
+  margin-left: 174px;
+}
+.mobile-info{
+    margin: 0 200px;
 }
 
-.restApp h1{
-    font-family: Poppins;
-    font-size: 58px;
-    font-weight: 700;
-    line-height: 80px;
-    letter-spacing: 0.2px;
-    text-align: center;
+.mobile-down {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 113px;
+  margin-bottom: 50px;
 }
-
-.restApp h4{
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 500;
-line-height: 38px;
-letter-spacing: 0.2px;
-text-align: center;
-margin-top: 15px;
+.mobile-img-down {
+    margin-top: 108px;
+  margin-right: 197px;
+  margin-bottom: 185px;
 }
-
-.mobile{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 113px;
-    margin-bottom: 50px;
+.mobile-info h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #fa4a0c;
 }
-
-.mobile-img{
-    margin-left: 174px;
+.mobile-info h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  text-align: left;
 }
-
+.mobile-info h4 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #737373;
+}
+.orderNow {
+  background-image: url('../assets/images/back2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 146.9px 0 131.1px;
+}
+.orderNow h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.orderNow h4 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.footer-logo {
+  display: inline-block;
+  margin-top: 112.11px;
+  margin-bottom: 58.77px;
+  margin-left: 115.43px;
+}
+.copywright {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  margin-right: 126px;
+}
